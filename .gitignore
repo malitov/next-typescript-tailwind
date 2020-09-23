@@ -1,2 +1,12 @@
-node_modules
 .DS_Store
+
+# build output
+dist
+.next
+
+# dependencies
+node_modules
+package-lock.json
+yarn.lock
+!/yarn.lock
+test/node_modules
