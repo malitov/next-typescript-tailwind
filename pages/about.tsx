@@ -1,9 +1,10 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { NextPage } from 'next';
+import Link from 'next/link';
+import Layout from '../components/Layout';
 
-const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>About</h1>
+const AboutPage: NextPage = () => (
+  <Layout title="About | Next.js Starter">
+    <h1 className="title">About</h1>
     <p>This is the about page</p>
     <p>
       <Link href="/">
@@ -11,6 +12,6 @@ const AboutPage = () => (
       </Link>
     </p>
   </Layout>
-)
+);
 
-export default AboutPage
+export default AboutPage;
